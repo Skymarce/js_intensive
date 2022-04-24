@@ -18,5 +18,5 @@ function selectFromInterval(currentArray, startInterval, endInterval) {
 try {
     selectFromInterval(['aaa'], 2, 3);
 } catch (error) {
-    error.message;
-}
+    throw new Error(error.message);
+} finally {}
